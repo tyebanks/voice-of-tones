@@ -10,7 +10,7 @@
 
 This is a custom built website for Voice of Tones, built using Gatsby and ReactJS, with a CMS integration using WordPress.
 
-Table of Contents
+<h2>Table of Contents</h2>
 
 1. 📖 Introduction
 2. ✨ Features
@@ -35,7 +35,7 @@ Voice of Tones is a website that showcases various audio and video content. The 
 
 ## 3. 🛠️ Installation
 
-### 🎓Prerequisites
+### 3.1🎓 Prerequisites
 
 Ensure you have the following installed on your machine:
 
@@ -43,7 +43,7 @@ Ensure you have the following installed on your machine:
 2. npm or yarn
 3. Gatsby CLI (optional, but recommended for Gatsby projects)
 
-### ✏️ Steps
+### 3.2 ✏️ Steps
 
 1. Clone the repository:
    git clone https://github.com/yourusername/voice-of-tones.git
@@ -82,13 +82,13 @@ gatsby serve
 
 ## 4. 🚀 Usage
 
-Development
+### 4.1 Development
 To start the development server, run:
 
 <p> npm run develop  or yarn develop</p>
 <p> Open http://localhost:8000 to view it in the browser. The page will reload if you make edits.</p>
 
-Production
+### 4.2 Production
 To create a production build, run:
 
 <p> npm run build or yarn build</p>
@@ -101,7 +101,7 @@ To serve the production build locally, run:
 To deploy the site, you can use any static site hosting service like Netlify, Vercel, or GitHub Pages.
 [Netlify](https://netlify.com) provides an easy way to deploy your site.
 
-### Build, Deploy, and Host on Netlify
+### 5.1 📦 Build, Deploy, and Host on Netlify
 
 #### ✏️ Steps
 
@@ -111,7 +111,7 @@ To deploy the site, you can use any static site hosting service like Netlify, Ve
 4. Set the build command to gatsby build and the publish directory to public.
    For detailed instructions, refer to Netlify's documentation.
 
-### Using WordPress for headless CMS
+### 5.2 🌐 Using WordPress for headless CMS
 
 #### ✏️ Steps
 
@@ -131,7 +131,7 @@ This project utilizes WordPress for content management. Ensure your WordPress si
    ],
    }</code>
 
-#### Other Hosting Options
+#### 💡 Other Hosting Options
 
 You can also deploy your site using other static site hosting services like Vercel or GitHub Pages.
 
@@ -145,7 +145,7 @@ This project is licensed under the MIT License. See the LICENSE file for details
 
 ## 8. 📧 Contact
 
-### Web Developer/Project Manager
+### 👩‍💻 Web Developer/Project Manager
 
 For questions, support, contributions, or any feedback, please contact:
 
@@ -153,7 +153,7 @@ For questions, support, contributions, or any feedback, please contact:
 Email: [ty.ebanks07@gmail.com](mailto:ty.ebanks07@gmail.com)
 Portfolio: [tebanks.com](https://tebanks.com)
 
-### Business Inquiries
+### 💼 Business Inquiries
 
 For business inquiries related to Voice of Tones, please contact:
 
