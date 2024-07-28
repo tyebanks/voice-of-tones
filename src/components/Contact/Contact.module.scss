@@ -20,14 +20,12 @@
 
     h2{
         padding-block: var(--space-5);
-        font-family: var(--font-serif);
-        font-weight: 400;
         text-align: center;
     }
     
 }
 
-.image_border_container, .btn, h2{
+.glass_card, .image_border_container, .btn{
     margin-inline: auto;
 }
 .image_border_container{
@@ -79,7 +77,8 @@
           inset 4px 4px 6px 0 rgba(0, 0, 0, .4);
       }
     
-    // .btn{
+    // The old .net Version styling for button 
+    //.btn{
        
     //     background: rgba(255, 255, 255, 0.05);
     //     color: var(--color-marker-3);

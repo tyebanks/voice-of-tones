@@ -7,51 +7,38 @@
     background-color: transparent;
     margin-bottom: var(--space-2);
     padding: var(--space-3);
-    li {
-        display: inline-block;
-        font-size: var(--icon-sm); 
-        padding: var(--space-2);
-    } 
-}
-
-
-
-.glow {
-    background: var(--color-code-dark);
-    color: var(--color-code-light);
-    height: var(--icon-md);
-    width: var(--icon-md);
-    border-radius: 50%;
-    text-decoration: none;
     display: flex;
-    justify-content: center;
-    align-items: center;
-    position: relative; /* Added this line to position the ::before pseudo-element correctly */
-    overflow: hidden; /* Ensures that the glow effect does not overflow the circle */
+    gap: var(--space-5);
+
+   .glow_btns{
+        font-size: var(--icon-sm); 
+        background: var(--color-code-dark);
+        color: var(--color-code-light);
+        height: var(--icon-md);
+        width: var(--icon-md);
+        border-radius: 50%;
+        text-decoration: none;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        position: relative; /* Added this line to position the ::before pseudo-element correctly */
+        overflow: hidden; /* Ensures that the glow effect does not overflow the circle */
+        transition: var(--transition-1);
+
+        &:hover{
+                    border: 2px solid  var(--color-marker-5);
+                    box-shadow: 0 0 15px var(--color-marker-4);
+                    color: var(--color-marker-5);
+        }
+
+        .icon{
+            outline: 2px double transparent;
+            display: inline-block;
+        }
+    } 
+  
 }
 
-.glow::before {
-    content: "";
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-    border-radius: 50%;
-    background: #ffee00;
-    transition: 0.5s;
-    transform: scale(0.9);
-    z-index: -1;
-}
+  
 
-.glow:hover::before {
-    transform: scale(1.1);
-    box-shadow: 0 0 15px #ffee00;
-}
 
-.glow:hover {
-    color: var(--color-marker-3);
-}
-.icon{
-    outline: 2px double transparent;
-}

@@ -60,7 +60,7 @@ const IndexPage = () => (
     <div className="textCenter">
   
       <p className="intro">
-      <h2>
+      <h2 className="home__h2">
       {/* Featured Articles */}
       Latest Blog Posts
       </h2>
