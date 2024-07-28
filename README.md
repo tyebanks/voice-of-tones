@@ -1,44 +1,164 @@
-<!-- AUTO-GENERATED-CONTENT:START (STARTER) -->
+<!-- AUTO-GENERATED-CONTENT:START (VOICE OF TONES) -->
 <p align="center">
-  <a href="https://www.gatsbyjs.com">
-    <img alt="Gatsby" src="https://www.gatsbyjs.com/Gatsby-Monogram.svg" width="60" />
+  <a href="https://voiceoftones.com">
+    <img alt="ofTones Logo" src="src/images/logo.png" width="60" />
   </a>
 </p>
 <h1 align="center">
   Voice of Tones
 </h1>
 
-This project is a custom build for Voice of Tones. The project is built using Gatsby for React.
+This is a custom built website for Voice of Tones, built using Gatsby and ReactJS, with a CMS integration using WordPress.
 
-_
-## 🚀 Quick start
+Table of Contents
 
+1. 📖 Introduction
+2. ✨ Features
+3. 🛠️ Installation
+4. 🚀 Usage
+5. 💫 Deployment
+6. 🤝 Contributing
+7. 📜 License
+8. 📧 Contact
 
+## 1. 📖 Introduction
 
-## 🧐 What's inside?
+Voice of Tones is a website that showcases various audio and video content. The website is built using modern web technologies, including Gatsby for static site generation and ReactJS for building the user interface. The content is managed through a WordPress CMS.
 
-   .
-    ├── node_modules
-    ├── src
-    ├── .gitignore
-    ├── gatsby-browser.js
-    ├── gatsby-config.js
-    ├── gatsby-node.js
-    ├── gatsby-ssr.js
-    ├── LICENSE
-    ├── package.json
-    └── README.md
+## 2. ✨ Features
 
+- **Static Site Generation:** Fast and optimized pages using Gatsby.
+- **Modern UI:** Built with ReactJS.
+- **CMS Integration:** Content managed via WordPress.
+- **Responsive Design:** Fully responsive and mobile-friendly.
+- **SEO Friendly:** Built-in SEO optimization with Gatsby.
 
-## 🎓 Learning Gatsby
+## 3. 🛠️ Installation
 
-Just stuff
+### 🎓Prerequisites
 
+Ensure you have the following installed on your machine:
 
-## 💫 Deploy
+1. Node.js (v14.x or later)
+2. npm or yarn
+3. Gatsby CLI (optional, but recommended for Gatsby projects)
 
-[Build, Deploy, and Host On Netlify](https://netlify.com)
- Will utilize WordPress for CMS.
+### ✏️ Steps
 
+1. Clone the repository:
+   git clone https://github.com/yourusername/voice-of-tones.git
+   cd voice-of-tones
+
+2. Install dependencies:
+   npm install
+   If you are using yarn:
+   yarn install
+
+3. Set up environment variables:
+   Create a .env file in the root of your project and add any necessary environment variables:
+   GATSBY_SITE_URL=https://your-site-url.com
+   WORDPRESS_API_URL=https://your-wordpress-site.com/graphql
+
+4. Start the development server:
+   npm run develop
+   If you are using yarn:
+   yarn develop
+
+5. Build the site:
+   npm run build
+   If you are using yarn:
+   yarn build
+
+6. Deploy the site:
+   Follow the instructions in the Deployment section to deploy your site to a hosting provider like Netlify.
+
+Optional: Using Gatsby CLI
+If you haven't already, you can install Gatsby CLI globally:
+Copy code: npm install -g gatsby-cli
+Then, you can use Gatsby CLI commands like:
+gatsby develop
+gatsby build
+gatsby serve
+
+## 4. 🚀 Usage
+
+Development
+To start the development server, run:
+
+<p> npm run develop  or yarn develop</p>
+<p> Open http://localhost:8000 to view it in the browser. The page will reload if you make edits.</p>
+
+Production
+To create a production build, run:
+
+<p> npm run build or yarn build</p>
+To serve the production build locally, run:
+<p> npm run serve or yarn serve </p>
+<p> Open http://localhost:9000 to view the production build.</p>
+
+## 5. 💫 Deployment
+
+To deploy the site, you can use any static site hosting service like Netlify, Vercel, or GitHub Pages.
+[Netlify](https://netlify.com) provides an easy way to deploy your site.
+
+### Build, Deploy, and Host on Netlify
+
+#### ✏️ Steps
+
+1. Deploying to Netlify
+2. Create a new site on Netlify.
+3. Connect your GitHub repository to Netlify.
+4. Set the build command to gatsby build and the publish directory to public.
+   For detailed instructions, refer to Netlify's documentation.
+
+### Using WordPress for headless CMS
+
+#### ✏️ Steps
+
+This project utilizes WordPress for content management. Ensure your WordPress site is set up and properly configured to work with your Gatsby site.
+
+1. Install the `gatsby-source-wordpress` plugin:
+<p> npm install gatsby-source-wordpress</p>
+2. Configure the plugin in your gatsby-config.js:
+   <code>module.exports = {
+   plugins: [
+   {
+   resolve: `gatsby-source-wordpress`,
+   options: {
+   url: `https://your-wordpress-site.com/graphql`,
+   },
+   },
+   ],
+   }</code>
+
+#### Other Hosting Options
+
+You can also deploy your site using other static site hosting services like Vercel or GitHub Pages.
+
+## 6. 🤝 Contributing
+
+Contributions are not welcomed at this time.
+
+## 7. 📜 License
+
+This project is licensed under the MIT License. See the LICENSE file for details.
+
+## 8. 📧 Contact
+
+### Web Developer/Project Manager
+
+For questions, support, contributions, or any feedback, please contact:
+
+**Ty Ebanks**
+Email: [ty.ebanks07@gmail.com](mailto:ty.ebanks07@gmail.com)
+Portfolio: [tebanks.com](https://tebanks.com)
+
+### Business Inquiries
+
+For business inquiries related to Voice of Tones, please contact:
+
+**Voice of Tones**
+Email: [toniwoodburn@gmail.como](mailto:toniwoodburn@gmail.com)
+Website: [https://voiceoftones.com](https://voiceoftones.com)
 
 <!-- AUTO-GENERATED-CONTENT:END -->
