@@ -43,7 +43,7 @@ Ensure you have the following installed on your machine:
 2. npm or yarn
 3. Gatsby CLI (optional, but recommended for Gatsby projects)
 
-### 3.2 ✏️ Steps
+### 3.2 📝 Setting Up
 
 1. Clone the repository:
    git clone https://github.com/yourusername/voice-of-tones.git
@@ -82,28 +82,30 @@ gatsby serve
 
 ## 4. 🚀 Usage
 
-### 4.1 Development
+### 4.1 💻 Development
+
 To start the development server, run:
 
-<p> npm run develop  or yarn develop</p>
-<p> Open http://localhost:8000 to view it in the browser. The page will reload if you make edits.</p>
+npm run develop or yarn develop
+Open http://localhost:8000 to view it in the browser. The page will reload if you make edits.
 
-### 4.2 Production
+### 4.2 📦 Production
+
 To create a production build, run:
 
-<p> npm run build or yarn build</p>
+npm run build or yarn build
 To serve the production build locally, run:
-<p> npm run serve or yarn serve </p>
-<p> Open http://localhost:9000 to view the production build.</p>
+npm run serve or yarn serve
+Open http://localhost:9000 to view the production build.
 
 ## 5. 💫 Deployment
 
 To deploy the site, you can use any static site hosting service like Netlify, Vercel, or GitHub Pages.
 [Netlify](https://netlify.com) provides an easy way to deploy your site.
 
-### 5.1 📦 Build, Deploy, and Host on Netlify
+### 5.1 🔧 Build, Deploy, and Host on Netlify
 
-#### ✏️ Steps
+#### ✏️ Instructions
 
 1. Deploying to Netlify
 2. Create a new site on Netlify.
@@ -113,12 +115,12 @@ To deploy the site, you can use any static site hosting service like Netlify, Ve
 
 ### 5.2 🌐 Using WordPress for headless CMS
 
-#### ✏️ Steps
+#### ✏️ Instructions
 
 This project utilizes WordPress for content management. Ensure your WordPress site is set up and properly configured to work with your Gatsby site.
 
 1. Install the `gatsby-source-wordpress` plugin:
-<p> npm install gatsby-source-wordpress</p>
+   npm install gatsby-source-wordpress
 2. Configure the plugin in your gatsby-config.js:
    <code>module.exports = {
    plugins: [
