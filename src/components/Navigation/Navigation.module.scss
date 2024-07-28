@@ -1,0 +1,29 @@
+/* Navigation.module.scss */
+@import '../../styles/variables.scss';
+
+
+
+// Define styles for the navigation component
+
+.nav {
+  // Style for the nav container
+  
+  display:flex;
+  align-items: center;
+}
+
+.navLink {
+  // Style for each navigation link
+  text-decoration: none; /* Removes underline from links */
+  color: var(--color-text-dark); /* Applies a primary color from CSS variables */
+  font-size: var(--font-sm);
+  padding-inline: var(--space-3);
+}
+
+/* Ensure to add styles for separator if used */
+// .separator {
+//   /* Example style for the separator */
+//   color: var(--color-layout-primary); /* Ensure this variable is defined in your variables.scss */
+// }
+
+ 

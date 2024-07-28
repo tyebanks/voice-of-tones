@@ -1,0 +1,62 @@
+@import url('https://fonts.googleapis.com/css2?family=Barlow:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Open+Sans:wght@300;400&family=Roboto:wght@100;300;400;700&family=Poppins:wght@100;200;300;400;500;600;700;800;900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Lora:ital,wght@0,400..700;1,400..700&display=swap');
+
+/* variables.scss */
+:root {
+  --color-global-primary: #3498db; /* Blue for global styling */
+  --color-layout-primary: #7026b9; /* Purple for layout-specific styling */
+  --color-text-dark: #333;
+  --color-text-light: #ffffff;
+  --color-code-dark: #202020; //;#1F135A
+  --color-code-light: #F4F7FF;
+  --color-code-bg:#303030; //#262626
+  --color-code: #8a6534;
+
+  /* Additional colors */
+  --color-marker-1: rgb(32, 81, 7) /* Orange */
+  --color-marker-2: rgba(32, 81, 7, 0.55); /* Blue */
+  --color-marker-3: rgba(65, 77, 6, 0.55);
+  
+  --color-marker-4: #205107; /* Green */
+  --color-marker-5: #663399; /* Purple */
+
+  /* Font sizes */
+  --font-sans: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji";
+  --font-sans-serif: "Poppins", "Barlow", sans-serif;
+  --font-serif: "Lora", serif;
+  --font-mono: SFMono-Regular, Menlo, Monaco, Consolas, "Liberation Mono", "Courier New", monospace;
+ 
+  --font-lg: 3em;
+  --font-md: 2.5em;
+  --font-sm: .9em;
+  --font-sx: .8em;
+
+  --icon-lg: 2.3em;
+  --icon-md: 2.0em;
+  --icon-sm: 1.7em;
+
+  --transition-1: ease-in-out 0.15s; //speed 150milliseconds
+
+  /* Line heights */
+  --line-height-loose: 1.75;
+  --line-height-normal: 1.5;
+  --line-height-dense: 1.1;
+
+  /* Spacing */
+  --space-1: 4px;
+  --space-2: 8px;
+  --space-3: 12px;
+  --space-4: 16px;
+  --space-5: 24px;
+  --space-6: 32px;
+  --space-7: 64px;
+  --space-lg: 410px;
+
+  /* Sizes */
+  --size-content: 54rem;
+  --size-gutter: var(--space-5);
+  --size-gap: var(--space-6);
+  --w: 280px;
+  --n: 2;
+  --border-radius: 4px;
+}

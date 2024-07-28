@@ -1,0 +1,28 @@
+/* Hero.module.scss */
+@import '../../styles/variables.scss';
+
+.hero {
+    background: url('../../images/header-one.jpg') no-repeat 50% 60%/cover;
+    width: 100vw;
+    height: 50vh;
+    place-content: center;
+    text-align: center;
+    justify-content: center;
+}
+
+.overlay{
+   
+    background: linear-gradient(
+        135deg,
+        rgba(0, 0, 0, 0.562), /* Starting color */
+        rgba(0, 0, 0, 0.3)  /* Ending color */
+    );
+    backdrop-filter: blur(10px); /* Apply a glassy blur effect */
+    display: inline-block;
+    border: 2px white double;
+}
+.content{
+   color: var(--color-text-light);
+   padding:var(--space-5);
+}
+

@@ -1,0 +1,117 @@
+// global.scss
+
+@import './variables.scss';
+
+
+/* Style definitions */
+*{
+  margin:0;
+  padding:0;
+  box-sizing: inherit;
+}
+
+*:before,
+*:after {
+  box-sizing: inherit;
+}
+
+
+html, body {
+  height: 100%;
+  margin: 0;  /* Remove default margin */
+  font-family: var(--font-sans);
+  box-sizing: border-box;
+}
+
+a {
+  background-color: transparent;
+  color: var(--color-layout-primary); /* Use layout-specific color */
+  text-decoration: none;
+}
+h1{
+  font-family: var(--font-sans);
+  font-weight: 300;
+  font-size: var(--font-lg);}
+h2{
+  font-family: var(--font-sans-serif);
+  font-weight:500;
+  font-size: var(--font-md);
+}
+ul, li{
+  list-style: none;
+}
+main{
+    flex-grow: 1;
+}
+.about__wrapper, .blog__wrapper, .contact__wrapper{
+  min-height: 100vh;  
+  padding: var(--size-gutter);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center center;
+}
+.about__wrapper{
+  background-image: url("../images/about_bg.jpg");
+}
+.blog__wrapper{
+  background-image: url("../images/blog_bg.jpeg");
+}
+.contact__wrapper{
+  background-image: url("../images/contact_bg.jpeg");
+}
+
+.flex-center{
+  display:flex;
+  align-items: center;
+}
+.list {
+  display: grid;
+  margin: 0;
+  gap: var(--size-gap);
+  grid-template-columns: repeat(
+    auto-fit,
+    minmax(max(var(--w), 100% / (var(--n) + 1) + 0.1%), 1fr)
+  );
+  margin-bottom: var(--size-gap);
+  margin-top: var(--size-gap);
+}
+
+.listItem {
+  margin: 0;
+}
+
+.listItem::marker {
+  color: var(--color-marker-1); /* Use variable for color */
+}
+
+.listItem:nth-child(2)::marker {
+  color: var(--color-marker-2); /* Use variable for color */
+}
+
+.listItem:nth-child(3)::marker {
+  color: var(--color-marker-3); /* Use variable for color */
+}
+
+.listItem:nth-child(4)::marker {
+  color: var(--color-marker-4); /* Use variable for color */
+}
+
+.listItemLink {
+
+  font-weight: bold;
+}
+
+.listItemDescription {
+  color: var(--color-text-dark);
+  margin-bottom: 0;
+  margin-top: var(--space-1);
+}
+
+.textCenter {
+  text-align: center;
+}
+
+.intro {
+  max-width: none;
+  line-height: var(--line-height-loose);
+}

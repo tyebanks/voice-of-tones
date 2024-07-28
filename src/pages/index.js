@@ -1,128 +1,84 @@
+
 import * as React from "react"
 import { Link } from "gatsby"
-import { StaticImage } from "gatsby-plugin-image"
-
-import Layout from "../components/layout"
+import "../styles/global.scss"
+import Layout from '../components/Layout'
 import Seo from "../components/seo"
-import * as styles from "../components/index.module.css"
+
 
 const links = [
+ { 
+    id: '1', // Unique identifier
+    title: 'Hiking to Blue Mountain Peak; a complete guide! ', // Title of the blog post
+    image: 'url-to-image1.jpg', // URL for the post’s image
+    category: 'Hiking', // Category or tag
+    readTime: '3 min read', // Estimated read time
+    excerpt: "If you're looking for a new to do weekend activity, or are interested in hiking as a hobby... ", // Short summary
+    url: 'https://www.gatsbyjs.com/docs/tutorial', // URL to the full post
+    },
   {
-    text: "Tutorial",
-    url: "https://www.gatsbyjs.com/docs/tutorial",
-    description:
-      "A great place to get started if you're new to web development. Designed to guide you through setting up your first Gatsby site.",
+    id: '2', // Unique identifier
+    title: '9 Great restaurants in Kingston Jamaica, for brunch', // Title of the blog post
+    image: 'url-to-image1.jpg', // URL for the post’s image
+    category: 'Restaurants and Food', // Category or tag
+    readTime: '5 min read', // Estimated read time
+    excerpt: 'Brunch is one of my favorite activities so whenever I can, I like to visit a new local eatery. Below are 9 of the best restaurants in Kingston, Jamaica I have visited, perfect for brunch with the fam, friends, or that special someone. Fromage tops the list. Fromage Gourmet Market...', // Short summary
+    url: 'https://www.gatsbyjs.com/docs/tutorial', // URL to the full post
   },
   {
-    text: "Examples",
-    url: "https://github.com/gatsbyjs/gatsby/tree/master/examples",
-    description:
-      "A collection of websites ranging from very basic to complex/complete that illustrate how to accomplish specific tasks within your Gatsby sites.",
+    id: '3', // Unique identifier
+    title: 'Ecotourism-all you need to know.', // Title of the blog post
+    image: 'url-to-image1.jpg', // URL for the post’s image
+    category: 'Two tread Travel', // Category or tag
+    readTime: '4 min read', // Estimated read time
+    excerpt: 'As many of you may already know, mother Earth is in shambles. By shambles, I mean forest fires, heat waves, glaciers melting, beaches disappearing, oceans rising and pigs flying. It may sound like all fun and games but the remiss actions of greedy and negligent humans have caused near irreparable damage...', // Short summary
+    url: 'https://www.gatsbyjs.com/docs/tutorial', // URL to the full post
   },
   {
-    text: "Plugin Library",
-    url: "https://www.gatsbyjs.com/plugins",
-    description:
-      "Learn how to add functionality and customize your Gatsby site or app with thousands of plugins built by our amazing developer community.",
+id: '4', // Unique identifier
+    title: 'The “extra” Ordinary- Throw all your other skincare products away!', // Title of the blog post
+    image: 'url-to-image1.jpg', // URL for the post’s image
+    category: 'Skincare', // Category or tag
+    readTime: '5 min read', // Estimated read time
+    excerpt: 'The “extra” Ordinary- Throw all your other skincare products away! MAY 6, 2021 / AFTERNOONT Whether you’ve always had skin issues or have noticed negative changes in your skin due to significant life changes (hello, COVID), you may be able to relate to what I experienced last year: a skin midlife crisis. That...', // Short summary
+    url: 'https://www.gatsbyjs.com/docs/tutorial', // URL to the full post
   },
   {
-    text: "Build and Host",
-    url: "https://www.gatsbyjs.com/cloud",
-    description:
-      "Now you’re ready to show the world! Give your Gatsby site superpowers: Build and host on Gatsby Cloud. Get started for free!",
+  id: '5', // Unique identifier
+    title: '‘The Yellow Envelope’- why you need to read it', // Title of the blog post
+    image: 'url-to-image1.jpg', // URL for the post’s image
+    category: 'Books and Reading', // Category or tag
+    readTime: '5 min read', // Estimated read time
+    excerpt: 'As humans, we sometimes get to the desperate point of needing something deeper. Just to keep on living. Some people find themselves through their work, children, or partners. Some in charity, art, whatever it may be. Others can’t seem to find it, or have yet to find it, a constant...', // Short summary
+    url: 'https://www.gatsbyjs.com/docs/tutorial', // URL to the full post
   },
 ]
-
-const samplePageLinks = [
-  {
-    text: "Page 2",
-    url: "page-2",
-    badge: false,
-    description:
-      "A simple example of linking to another page within a Gatsby site",
-  },
-  { text: "TypeScript", url: "using-typescript" },
-  { text: "Server Side Rendering", url: "using-ssr" },
-  { text: "Deferred Static Generation", url: "using-dsg" },
-]
-
-const moreLinks = [
-  { text: "Join us on Discord", url: "https://gatsby.dev/discord" },
-  {
-    text: "Documentation",
-    url: "https://gatsbyjs.com/docs/",
-  },
-  {
-    text: "Starters",
-    url: "https://gatsbyjs.com/starters/",
-  },
-  {
-    text: "Showcase",
-    url: "https://gatsbyjs.com/showcase/",
-  },
-  {
-    text: "Contributing",
-    url: "https://www.gatsbyjs.com/contributing/",
-  },
-  { text: "Issues", url: "https://github.com/gatsbyjs/gatsby/issues" },
-]
-
-const utmParameters = `?utm_source=starter&utm_medium=start-page&utm_campaign=default-starter`
 
 const IndexPage = () => (
-  <Layout>
-    <div className={styles.textCenter}>
-      <StaticImage
-        src="../images/example.png"
-        loading="eager"
-        width={64}
-        quality={95}
-        formats={["auto", "webp", "avif"]}
-        alt=""
-        style={{ marginBottom: `var(--space-3)` }}
-      />
-      <h1>
-        Welcome to <b>Gatsby!</b>
-      </h1>
-      <p className={styles.intro}>
-        <b>Example pages:</b>{" "}
-        {samplePageLinks.map((link, i) => (
-          <React.Fragment key={link.url}>
-            <Link to={link.url}>{link.text}</Link>
-            {i !== samplePageLinks.length - 1 && <> · </>}
-          </React.Fragment>
-        ))}
-        <br />
-        Edit <code>src/pages/index.js</code> to update this page.
+  <Layout showHero={true}>
+  
+    <div className="textCenter">
+  
+      <p className="intro">
+      <h2>
+      {/* Featured Articles */}
+      Latest Blog Posts
+      </h2>
+      <br />
+        {links.map((link) => (
+        <div key={link.id} className="listItem">
+          <h3>{link.title}</h3>
+          {/* <img src={link.image} alt={link.title} /> */}
+          <p>{link.category}</p>
+          <p>{link.readTime}</p>
+          <p>{link.excerpt}</p>
+          <Link to={link.url}>Read More</Link>
+        </div>
+      ))}
       </p>
     </div>
-    <ul className={styles.list}>
-      {links.map(link => (
-        <li key={link.url} className={styles.listItem}>
-          <a
-            className={styles.listItemLink}
-            href={`${link.url}${utmParameters}`}
-          >
-            {link.text} ↗
-          </a>
-          <p className={styles.listItemDescription}>{link.description}</p>
-        </li>
-      ))}
-    </ul>
-    {moreLinks.map((link, i) => (
-      <React.Fragment key={link.url}>
-        <a href={`${link.url}${utmParameters}`}>{link.text}</a>
-        {i !== moreLinks.length - 1 && <> · </>}
-      </React.Fragment>
-    ))}
   </Layout>
 )
 
-/**
- * Head export to define metadata for the page
- *
- * See: https://www.gatsbyjs.com/docs/reference/built-in-components/gatsby-head/
- */
 export const Head = () => <Seo title="Home" />
-
 export default IndexPage

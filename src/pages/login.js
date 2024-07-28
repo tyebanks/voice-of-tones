@@ -1,10 +1,10 @@
 import * as React from "react"
 import { Link } from "gatsby"
-
-import Layout from "../components/layout"
+import Layout from "../components/Layout"
+// import Layout from "../components/layout"
 import Seo from "../components/seo"
 
-const UsingSSR = ({ serverData }) => {
+const LogIn = ({ serverData }) => {
   return (
     <Layout>
       <h1>
@@ -32,9 +32,9 @@ const UsingSSR = ({ serverData }) => {
   )
 }
 
-export const Head = () => <Seo title="Using SSR" />
+export const Head = () => <Seo title="Login" />
 
-export default UsingSSR
+export default LogIn
 
 export async function getServerData() {
   try {
