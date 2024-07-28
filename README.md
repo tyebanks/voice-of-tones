@@ -1,7 +1,7 @@
 <!-- AUTO-GENERATED-CONTENT:START (VOICE OF TONES) -->
 <p align="center">
   <a href="https://voiceoftones.com">
-    <img alt="ofTones Logo" src="src/images/logo.png" width="60" />
+        <img alt="ofTones Logo" src="src/images/logo.png" style="width: 60px; height: auto; max-height: 60px;" />
   </a>
 </p>
 <h1 align="center">
