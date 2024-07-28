@@ -17,7 +17,7 @@
     box-shadow: 5px 5px 30px rgba(0,0,0,0.2);
     border-radius: 10px;
     padding: var(--space-7);
-
+    margin-bottom: 64px;
     h2{
         padding-block: var(--space-5);
         text-align: center;
@@ -27,6 +27,7 @@
 
 .glass_card, .image_border_container, .btn{
     margin-inline: auto;
+
 }
 .image_border_container{
     padding:5px;
@@ -55,7 +56,6 @@
     gap: var(--space-4);
 
     .btn {
-
         background-color: rgba(32, 81, 7, 0.55); /* Fallback for browsers that do not support gradients */
         background: linear-gradient(0deg,  rgb(32, 81, 7)  0%, rgba(65, 77, 6, 0.55) 100%);    
         border: none;

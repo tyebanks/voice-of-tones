@@ -17,19 +17,16 @@
 // );
 
 // export default Header;
-import * as React from "react";
-import * as styles from './Header.module.scss';
-import Navigation from '../Navigation/Navigation'; // Adjust path if needed
-import Logo from '../Logo/Logo';
+import * as React from 'react'
+import * as styles from './Header.module.scss'
+import Navigation from '../Navigation/Navigation' // Adjust path if needed
+import Logo from '../Logo/Logo'
 
 const Header = () => (
-  <header className={styles.header}>
-    <Navigation />
-    <Logo/>
-  </header>
- 
-);
+    <header className={styles.header}>
+        <Navigation />
+        <Logo />
+    </header>
+)
 
-export default Header;
-
-
+export default Header

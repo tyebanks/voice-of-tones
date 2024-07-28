@@ -1,2 +1,2 @@
 // src/components/Social/index.js
-export { default } from './Social';
+export { default } from './Social'

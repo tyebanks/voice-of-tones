@@ -7,10 +7,10 @@
   --color-layout-primary: #7026b9; /* Purple for layout-specific styling */
   --color-text-dark: #333;
   --color-text-light: #ffffff;
-  --color-code-dark: #202020; //;#1F135A
+  --color-code-dark: #202020;
   --color-code-light: #F4F7FF;
   --color-code-bg:#303030; //#262626
-  --color-code: #8a6534;
+  --color-code: #1F135A;
 
   /* Additional colors */
   --color-marker-1: rgb(32, 81, 7) /* Green 1 for gradient */
@@ -18,7 +18,8 @@
   --color-marker-3: rgba(65, 77, 6, 0.55); /*Green 3 for gradient*/  
   --color-marker-4: #205107; /* Green */
   --color-marker-5: yellowgreen;
-   --color-marker-6: #663399; /* Purple */
+  --color-marker-6: #663399; /* Purple */
+  --green: #22330b;
 
   /* Font sizes */
   --font-sans: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji";
@@ -58,5 +59,5 @@
   --size-gap: var(--space-6);
   --w: 280px;
   --n: 2;
-  --border-radius: 4px;
+  --border-radius: 10px;
 }

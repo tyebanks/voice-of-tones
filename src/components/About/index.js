@@ -1,2 +1,2 @@
 // src/components/About/index.js
-export {default} from './About';
+export { default } from './About'

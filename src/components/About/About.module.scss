@@ -1,2 +1,64 @@
 /* About.module.scss */
 @import '../../styles/variables.scss';
+
+.wrapper{
+    background: transparent;
+    display: flex;
+    gap: var(--space-6);
+    flex-direction: column;
+    // align-items: flex-end;
+    // padding-right: var(--space-7);
+
+    h2{
+        font-size: 2em;
+    }
+
+    .welcomeMsg, .blogFocus {
+    
+        padding: var(--space-7);
+        display: flex;
+    }
+}
+
+.welcomeMsg{
+    margin-top: var(--space-7);
+    color: var(--color-text-light);
+    background-color: var(--green);
+    height: 100px;
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+}
+
+.authorBio{
+    outline: 2px double var(--color-marker-4);
+    // background-color: var( --color-code-light);
+    // text-align: justify;
+    // text-justify: inter-word;
+    line-height: var(--line-height-loose);
+    width: 100%;
+    display: grid;
+    
+    .imgBox{
+        width: 200px;
+        height: 260px;
+          
+        .authorImg{
+            height: 100%;
+            width:100%;
+            object-fit: cover;
+            border-radius: 50px;
+        }
+    }
+
+    .bioTextBox{
+        // background:red;
+        width:100%;
+    }
+}
+
+.blogFocus{
+    outline: 2px double var(--color-marker-4);
+    background-color: var( --color-code-light);
+    flex-direction: column;
+}
