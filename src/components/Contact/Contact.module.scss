@@ -1,85 +1,94 @@
 /* Contact.module.scss */
 @import '../../styles/variables.scss';
 
-.container{
+.container {
     display: flex;
     flex-direction: column;
     align-items: center;
 }
 
-.glass_card{
+.glass_card {
     width: 500px;
     flex-grow: 1;
-    background: rgba(255,255,255,0.05);
+    background: rgba(255, 255, 255, 0.05);
     backdrop-filter: blur(15px);
-    border-top: 1px solid rgba(255,255,255,0.2);
-    border-left: 1px solid rgba(255,255,255,0.2);
-    box-shadow: 5px 5px 30px rgba(0,0,0,0.2);
+    border-top: 1px solid rgba(255, 255, 255, 0.2);
+    border-left: 1px solid rgba(255, 255, 255, 0.2);
+    box-shadow: 5px 5px 30px rgba(0, 0, 0, 0.2);
     border-radius: 10px;
     padding: var(--space-7);
     margin-bottom: 64px;
-    h2{
+    h2 {
         padding-block: var(--space-5);
         text-align: center;
     }
-    
 }
 
-.glass_card, .image_border_container, .btn{
+.glass_card,
+.image_border_container,
+.btn {
     margin-inline: auto;
-
 }
-.image_border_container{
-    padding:5px;
+.image_border_container {
+    padding: 5px;
     border-radius: 100%;
-    border: 5px solid  rgba(32, 81, 7, 0.55);
-    width:200px;
+    border: 5px solid rgba(32, 81, 7, 0.55);
+    width: 200px;
     height: 200px;
 }
 
-.image_container{
-    width:100%;
+.image_container {
+    width: 100%;
     height: 100%;
     border-radius: 100%;
     overflow: hidden;
 
-    img{
+    img {
         height: 100%;
         width: 100%;
         object-fit: cover;
-
     }
 }
-.contact_buttons{
+.contact_buttons {
     display: flex;
     flex-direction: column;
     gap: var(--space-4);
 
     .btn {
-        background-color: rgba(32, 81, 7, 0.55); /* Fallback for browsers that do not support gradients */
-        background: linear-gradient(0deg,  rgb(32, 81, 7)  0%, rgba(65, 77, 6, 0.55) 100%);    
+        background-color: rgba(
+            32,
+            81,
+            7,
+            0.55
+        ); /* Fallback for browsers that do not support gradients */
+        background: linear-gradient(
+            0deg,
+            rgb(32, 81, 7) 0%,
+            rgba(65, 77, 6, 0.55) 100%
+        );
         border: none;
-        color: var(--color-text-light); 
+        color: var(--color-text-light);
         text-align: center;
         border-radius: 50px;
         padding: var(--space-2);
         padding-block: var(--space-3);
-        width:80%;
-      }
-      .btn:before {
+        width: 80%;
+    }
+    .btn:before {
         height: 0%;
         width: 2px;
-      }
-      .btn:hover {
-        box-shadow:  4px 4px 6px 0 rgba(255,255,255,.5),
-                    -4px -4px 6px 0 rgba(116, 125, 136, .5), 
-          inset -4px -4px 6px 0 rgba(255,255,255,.2),
-          inset 4px 4px 6px 0 rgba(0, 0, 0, .4);
-      }
-    
-    // The old .net Version styling for button 
+    }
+    .btn:hover {
+        box-shadow:
+            4px 4px 6px 0 rgba(255, 255, 255, 0.5),
+            -4px -4px 6px 0 rgba(116, 125, 136, 0.5),
+            inset -4px -4px 6px 0 rgba(255, 255, 255, 0.2),
+            inset 4px 4px 6px 0 rgba(0, 0, 0, 0.4);
+    }
+
+    // The old .net Version styling for button
     //.btn{
-       
+
     //     background: rgba(255, 255, 255, 0.05);
     //     color: var(--color-marker-3);
     //     padding: var(--space-2);
@@ -92,7 +101,7 @@
     //     border-style: solid;
     //     border-color: transparent;
     //     transition: var(--transition-1);
-    
+
     //     &:hover{
     //         border: 2px solid  var(--color-marker-3);
     //         box-shadow: 0 0 15px var(--color-marker-2);

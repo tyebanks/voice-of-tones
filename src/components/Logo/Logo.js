@@ -6,7 +6,7 @@ const Logo = () => (
     <div className={styles.container}>
         <StaticImage
             className={styles.logo}
-            src="../../images/logo.png"
+            src="../../images/vt.gif"
             alt="Site Logo"
         />
     </div>
