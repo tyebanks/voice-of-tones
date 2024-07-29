@@ -81,4 +81,16 @@ main {
     line-height: var(--line-height-loose);
 }
 
+ul.diamond-list {
+    list-style: none; /* Remove default bullets */
+    padding-left: 20px;
+}
 
+ul li::before {
+    content: '\25C8'; /* Unicode for diamond bullet */
+    color: black; /* Set color if needed */
+    display: inline-block;
+    width: 1em; /* Ensure proper spacing */
+    margin-left: -1em; /* Align with text */
+    margin-right: 10px; /* Space between bullet and text */
+}
