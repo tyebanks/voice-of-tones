@@ -86,19 +86,22 @@
     padding: var(--space-5);
 
     .bio_image_container {
-        flex: 1; /* 40% width for the image container */
+        flex: 1;
         max-width: 200px;
-        // outline: double 4px black;
-
+        max-height: 200px;
+        border: 5px solid var(--green);
+        border-radius: 100%;
+        overflow: hidden;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        margin-inline: var(--space-5);
+        margin-top: var(--space-5);
         .bio_image {
-            margin-inline: var(--space-5);
-            margin-top: var(--space-5);
             width: 100%;
             height: 100%;
-            max-width: 200px;
-            max-height: 230px;
+            border-radius: 100%;
             object-fit: cover;
-            border-radius: 35px; /* Add border radius as needed */
         }
     }
 
@@ -126,6 +129,50 @@
 
     @media (max-width: 768px) {
         margin-bottom: var(--space-7);
+    }
+
+    .blog_focus_image_container {
+        margin-block: var(--space-6);
+        width: 300px;
+        height: 300px;
+        overflow: hidden;
+        // object-fit: cover; /* Ensure the image covers the area */// object-position: 50% 20%;
+        // object-position: center; /* Focus on the center of the image */
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        clip-path: polygon(
+            30% 0%,
+            70% 0%,
+            100% 30%,
+            100% 70%,
+            70% 100%,
+            30% 100%,
+            0% 70%,
+            0% 30%
+        );
+        // position: relative;
+
+        background: var(--green);
+        box-shadow: 5px 25px 35px red;
+    }
+
+    .blog_focus_image {
+        width: 96%;
+        height: 96%;
+        object-fit: cover;
+        transition: transform 0.5s ease;
+
+        clip-path: polygon(
+            30% 0%,
+            70% 0%,
+            100% 30%,
+            100% 70%,
+            70% 100%,
+            30% 100%,
+            0% 70%,
+            0% 30%
+        );
     }
 
     .list {

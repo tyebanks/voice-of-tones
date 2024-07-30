@@ -3,6 +3,7 @@ import * as React from 'react'
 import * as styles from './About.module.scss'
 import '../../styles/global.scss' // Import global styles
 import tonesBioImage from '../../images/author-four.jpg'
+import tonesBlogImage from '../../images/author-three.jpg'
 
 const WelcomeMsg = () => (
     <section className={styles.welcome_msg}>
@@ -20,7 +21,7 @@ const AuthorBio = () => (
             <img
                 className={styles.bio_image}
                 src={tonesBioImage}
-                alt="Author"
+                alt="Author Bio Pic"
             />
         </div>
 
@@ -42,7 +43,7 @@ const AuthorBio = () => (
             <p>
                 Currently, I am sincerely attempting to simultaneously master
                 personal finance, health and wellness, and the meaning of life
-                send help.
+                (send help).
             </p>
         </div>
     </section>
@@ -52,14 +53,23 @@ const BlogFocus = () => (
     <section className={styles.blog_focus_wrapper}>
         <h2>Blog Focus</h2>
         <p>So I have officially entered the “blogsphere”…</p>
+        <div className={styles.blog_focus_image_container}>
+            <img
+                className={styles.blog_focus_image}
+                src={tonesBlogImage}
+                alt="Author excited picture"
+            />
+        </div>
+
         <p>
             Starting a blog has been in the back of my mind for years, but of
             course, crippling anxiety (gotta love it) always held me back. I
             always thought a blog required a certain level of openness and
             that’s just never been who I thought I was. The anxiety is still
-            here BUT I decided to do it anyway. Voice of Tones blog will explore
-            many of my personal interests, sharing my thoughts and experiences
-            along the way. <br /> <br /> The focus of this blog will include:
+            here <em>BUT</em> I decided to do it anyway. Voice of Tones blog
+            will explore many of my personal interests, sharing my thoughts and
+            experiences along the way. <br /> <br /> The focus of this blog will
+            include:
         </p>
         <ul className={styles.list}>
             <li className={styles.listItem}>Books</li>
