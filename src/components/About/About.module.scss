@@ -24,6 +24,19 @@
     }
 }
 
+.welcome_msg,
+.author_bio_wrapper,
+.blog_focus_wrapper {
+    backdrop-filter: blur(15px);
+    border-top: 1px solid rgba(255, 255, 255, 0.2);
+    border-left: 1px solid rgba(255, 255, 255, 0.2);
+    box-shadow: 5px 5px 30px rgba(0, 0, 0, 0.2);
+    border-radius: 10px;
+    border: 1px solid rgba(32, 81, 7, 0.55);
+    text-align: justify;
+    text-justify: inter-word;
+}
+
 .welcome_msg {
     margin-top: var(--space-5);
     display: flex;
@@ -33,38 +46,38 @@
 
     p {
         font-weight: 500;
-        font-size: 1.45em;
-
+        font-size: 1.3em;
         font-style: oblique;
-        background: linear-gradient(
-            to right,
-            rgb(53, 84, 57),
-            rgb(121, 176, 83)
-        );
-        -webkit-background-clip: text;
-        -webkit-text-fill-color: transparent;
-        animation: fadeIn 1s ease-in 1s forwards; /* Add 'forwards' to keep the final state */
-        pointer-events: none;
-        opacity: 0; /* Ensure the element is initially invisible */
-    }
+        margin-block: 1em;
+        padding-block: var(--space-4);
+        width: 91ch;
+        animation:
+            typing 6s steps(91),
+            blink 0.5s step-end infinite alternate;
+        white-space: nowrap;
+        overflow: hidden;
+        border-right: 3px groove yellowgreen;
 
-    @keyframes fadeIn {
-        0% {
-            opacity: 0;
+        @keyframes typing {
+            from {
+                width: 0;
+            }
         }
-        100% {
-            opacity: 1;
-        }
-    }
 
-    @media (max-width: 768px) {
-        font-size: var(--font-sx);
-        padding-inline: var(--space-5);
-        padding-block: var(--space-5);
-        height: auto;
+        @keyframes blink {
+            50% {
+                border-color: transparent;
+            }
+        }
+
+        @media (max-width: 768px) {
+            font-size: var(--font-sx);
+            padding-inline: var(--space-5);
+            padding-block: var(--space-5);
+            height: auto;
+        }
     }
 }
-
 .author_bio_wrapper {
     display: flex;
     flex-direction: row;
@@ -92,6 +105,11 @@
     .bio_text_container {
         flex: 2;
         padding: var(--space-5);
+        margin-inline: 3em;
+
+        @media (max-width: 768px) {
+            margin-inline: auto;
+        }
     }
 
     @media (max-width: 768px) {
@@ -106,36 +124,62 @@
     padding-block: var(--space-5);
     margin-bottom: var(--space-3);
 
+    @media (max-width: 768px) {
+        margin-bottom: var(--space-7);
+    }
+
     .list {
+        display: flex;
+        justify-content: space-evenly;
         padding-left: 40px; /* Adjust as needed */
         list-style-type: none; /* Ensure list style is set */
         line-height: var(--line-height-dense);
+
         .listItem {
-            margin-block: 1em;
-            font-size: 0.85em;
-            // margin-bottom: 10px; /* Optional: adds spacing between list items */
+            padding-block: var(--space-5);
         }
     }
 
     .signature {
-        padding-block: var(--space-3);
-        color: red;
-        font-weight: 500;
-    }
-    @media (max-width: 768px) {
+        width: 5ch;
+        font-size: 3em;
+        font-family: var(--font-cursive);
         margin-bottom: var(--space-7);
-    }
-}
+        padding-block: var(--space-3);
+        background: linear-gradient(
+            to right,
+            rgb(53, 84, 57),
+            rgb(121, 176, 83)
+        );
+        -webkit-background-clip: text; // Clips the background of the letters to make outline
+        -webkit-text-fill-color: transparent; // makes the background of the letters transparent
+        animation: fadeIn 2s ease-in forwards;
+        pointer-events: none;
+        opacity: 0;
 
-.welcome_msg,
-.author_bio_wrapper,
-.blog_focus_wrapper {
-    backdrop-filter: blur(15px);
-    border-top: 1px solid rgba(255, 255, 255, 0.2);
-    border-left: 1px solid rgba(255, 255, 255, 0.2);
-    box-shadow: 5px 5px 30px rgba(0, 0, 0, 0.2);
-    border-radius: 10px;
-    border: 1px solid rgba(32, 81, 7, 0.55);
-    text-align: justify;
-    text-justify: inter-word;
+        @keyframes fadeIn {
+            from {
+                opacity: 0;
+            }
+            to {
+                opacity: 1;
+            }
+        }
+    }
+
+    @media (max-width: 768px) {
+        .list {
+            flex-direction: column;
+            margin-block: var(--space-4);
+
+            .listItem {
+                padding-block: var(--space-2);
+            }
+        }
+
+        .signature {
+            margin-bottom: var(--space-2);
+            padding-block: var(--space-4);
+        }
+    }
 }

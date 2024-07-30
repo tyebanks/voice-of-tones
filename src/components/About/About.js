@@ -9,8 +9,7 @@ const WelcomeMsg = () => (
         <p>
             {' '}
             Welcome to my blog! Here you'll find my voice as I share my thoughts
-            and experiences on various aspects of life, including lifestyle,
-            personal growth, creativity, and more!
+            and experiences on a plethoria of topics!
         </p>
     </section>
 )
@@ -30,12 +29,20 @@ const AuthorBio = () => (
             <p>
                 Hello guys, I’m Toni! I am a freelance writer and rookie blogger
                 whose passions include creative writing, travel, art in all its
-                forms, and history. I’m 23 years old, I graduated from the
-                University of the West Indies and earned a Bachelor of Science
-                degree in Tourism Management Studies. I also work *now from
-                home*, full time on an insurance account. Currently, I am
-                sincerely attempting to simultaneously master personal finance,
-                health and wellness, and the meaning of life send help.
+                forms, and history.
+            </p>
+            <br />
+            <p>
+                I’m 23 years old, I graduated from the University of the West
+                Indies and earned a Bachelor of Science degree in Tourism
+                Management Studies. I also work *now from home*, full time on an
+                insurance account.
+            </p>
+            <br />{' '}
+            <p>
+                Currently, I am sincerely attempting to simultaneously master
+                personal finance, health and wellness, and the meaning of life
+                send help.
             </p>
         </div>
     </section>
