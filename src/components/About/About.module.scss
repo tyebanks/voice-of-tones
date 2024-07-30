@@ -35,6 +35,9 @@
     border: 1px solid rgba(32, 81, 7, 0.55);
     text-align: justify;
     text-justify: inter-word;
+    @media (max-width: 768px) {
+        border: 1px double transparent;
+    }
 }
 
 .welcome_msg {
@@ -123,10 +126,26 @@
 }
 
 .blog_focus_wrapper {
-    padding-inline: var(--space-6);
+    margin-inline: auto;
+    padding-inline: var(--space-7);
     padding-block: var(--space-5);
     margin-bottom: var(--space-3);
+    display: flex;
+    flex-direction: column;
+    justify-content: center; /* Center horizontally */
+    align-items: center;
 
+    .blog_focus_top {
+        width: 100%;
+
+        p {
+            margin-block: var(--space-5);
+        }
+    }
+
+    .blog_focus_bottom {
+        outline: 1px dotted transparent;
+    }
     @media (max-width: 768px) {
         margin-bottom: var(--space-7);
     }

@@ -51,7 +51,7 @@ const AuthorBio = () => (
 
 const BlogFocus = () => (
     <section className={styles.blog_focus_wrapper}>
-        <div className={styles.child}>
+        <div className={styles.blog_focus_top}>
             <h2>Blog Focus</h2>
             <p>
                 So I have <strong>officially</strong> entered the “blogsphere”…
@@ -67,7 +67,7 @@ const BlogFocus = () => (
             </div>
         </div>
 
-        <div className={styles.child}>
+        <div className={styles.blog_focus_bottom}>
             <p>
                 Starting a blog has been in the back of my mind for years, but
                 of course, crippling anxiety (gotta love it) always held me
