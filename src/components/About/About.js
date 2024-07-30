@@ -51,48 +51,57 @@ const AuthorBio = () => (
 
 const BlogFocus = () => (
     <section className={styles.blog_focus_wrapper}>
-        <h2>Blog Focus</h2>
-        <p>So I have officially entered the “blogsphere”…</p>
-        <div className={styles.blog_focus_image_container}>
-            <img
-                className={styles.blog_focus_image}
-                src={tonesBlogImage}
-                alt="Author excited picture"
-            />
+        <div className={styles.child}>
+            <h2>Blog Focus</h2>
+            <p>
+                So I have <strong>officially</strong> entered the “blogsphere”…
+            </p>
+        </div>
+        <div className={styles.octagon_border}>
+            <div className={styles.blog_img_container}>
+                <img
+                    className={styles.blog_img}
+                    src={tonesBlogImage}
+                    alt="Author excited picture"
+                />
+            </div>
         </div>
 
-        <p>
-            Starting a blog has been in the back of my mind for years, but of
-            course, crippling anxiety (gotta love it) always held me back. I
-            always thought a blog required a certain level of openness and
-            that’s just never been who I thought I was. The anxiety is still
-            here <em>BUT</em> I decided to do it anyway. Voice of Tones blog
-            will explore many of my personal interests, sharing my thoughts and
-            experiences along the way. <br /> <br /> The focus of this blog will
-            include:
-        </p>
-        <ul className={styles.list}>
-            <li className={styles.listItem}>Books</li>
-            <li className={styles.listItem}>Wellness</li>
-            <li className={styles.listItem}>Skin & Hair Care</li>
-            <li className={styles.listItem}>Décor</li>
-            <li className={styles.listItem}>Fashion</li>
-            <li className={styles.listItem}>History</li>
-            <li className={styles.listItem}>Literature</li>
-            <li className={styles.listItem}>Travel</li>
-            <li className={styles.listItem}>Music</li>
-        </ul>
-        <p>
-            These interests not only define who I am but also shape the content
-            of this blog. Ultimately, I want to comfortably travel the world
-            while writing – both freelancing and creatively. Whoever you are,
-            whenever you’re reading this, thank you for taking the time out of
-            your day to stop by. Have a look around, and if you enjoy anything
-            at all here, feel free to revisit. Lastly, in addition to my written
-            blog posts, I may share my video content from time to time, so
-            please stay tuned for my latest updates!
-        </p>
-        <p className={styles.signature}>- Tones</p>
+        <div className={styles.child}>
+            <p>
+                Starting a blog has been in the back of my mind for years, but
+                of course, crippling anxiety (gotta love it) always held me
+                back. I always thought a blog required a certain level of
+                openness and that’s just never been who I thought I was. The
+                anxiety is still here <em>BUT</em> I decided to do it anyway.
+                Voice of Tones blog will explore many of my personal interests,
+                sharing my thoughts and experiences along the way. <br /> <br />{' '}
+                The focus of this blog will include:
+            </p>
+            <ul className={styles.list}>
+                <li className={styles.listItem}>Books</li>
+                <li className={styles.listItem}>Wellness</li>
+                <li className={styles.listItem}>Skin & Hair Care</li>
+                <li className={styles.listItem}>Décor</li>
+                <li className={styles.listItem}>Fashion</li>
+                <li className={styles.listItem}>History</li>
+                <li className={styles.listItem}>Literature</li>
+                <li className={styles.listItem}>Travel</li>
+                <li className={styles.listItem}>Music</li>
+            </ul>
+            <p>
+                These interests not only define who I am but also shape the
+                content of this blog. Ultimately, I want to comfortably travel
+                the world while writing – both freelancing and creatively.
+                Whoever you are, whenever you’re reading this, thank you for
+                taking the time out of your day to stop by. Have a look around,
+                and if you enjoy anything at all here, feel free to revisit.
+                Lastly, in addition to my written blog posts, I may share my
+                video content from time to time, so please stay tuned for my
+                latest updates!
+            </p>
+            <p className={styles.signature}>- Tones</p>
+        </div>
     </section>
 )
 

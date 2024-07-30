@@ -131,38 +131,15 @@
         margin-bottom: var(--space-7);
     }
 
-    .blog_focus_image_container {
-        margin-block: var(--space-6);
+    .octagon_border {
         width: 300px;
         height: 300px;
         overflow: hidden;
-        // object-fit: cover; /* Ensure the image covers the area */// object-position: 50% 20%;
-        // object-position: center; /* Focus on the center of the image */
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        clip-path: polygon(
-            30% 0%,
-            70% 0%,
-            100% 30%,
-            100% 70%,
-            70% 100%,
-            30% 100%,
-            0% 70%,
-            0% 30%
-        );
-        // position: relative;
-
         background: var(--green);
-        box-shadow: 5px 25px 35px red;
-    }
-
-    .blog_focus_image {
-        width: 96%;
-        height: 96%;
-        object-fit: cover;
-        transition: transform 0.5s ease;
-
+        display: flex;
+        align-items: center;
+        padding: 0.75em;
+        margin-block: 2em;
         clip-path: polygon(
             30% 0%,
             70% 0%,
@@ -173,13 +150,35 @@
             0% 70%,
             0% 30%
         );
+
+        .blog_img_container {
+            width: 100%;
+            height: 100%;
+            clip-path: inherit;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+        .blog_img {
+            width: 400px;
+            height: 400px;
+
+            clip-path: inherit;
+            object-fit: cover; /* Fit the image within the container */
+            transition: transform 0.5s ease;
+        }
+    }
+    .blog_img_container:hover .blog_img {
+        transform: scale(
+            1.5
+        ); /* Adjust the scale value to increase or decrease zoom in...*/
     }
 
     .list {
         display: flex;
         justify-content: space-evenly;
-        padding-left: 40px; /* Adjust as needed */
-        list-style-type: none; /* Ensure list style is set */
+        padding-left: 40px;
+        list-style-type: none;
         line-height: var(--line-height-dense);
 
         .listItem {
