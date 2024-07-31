@@ -1,6 +1,6 @@
 import * as React from 'react'
 import { Link } from 'gatsby'
-
+import Category from '../components/Category'
 import Layout from '../components/Layout/Layout'
 import Seo from '../components/seo'
 
@@ -9,6 +9,7 @@ const BlogPage = () => (
         <section className="blog__wrapper">
             <h1>Blog Categories</h1>
             <p>Welcome to blogs page</p>
+            <Category />
             <Link to="/">Go back to the homepage</Link>
         </section>
     </Layout>

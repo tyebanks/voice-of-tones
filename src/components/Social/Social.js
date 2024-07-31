@@ -10,41 +10,63 @@ import {
     faTiktok,
     faYoutube,
 } from '@fortawesome/free-brands-svg-icons'
-const Social = () => (
-    <section className={styles.socials}>
-        <a className={styles.glow_btns} href="https://www.youtube.com/">
-            <FontAwesomeIcon icon={faYoutube} className={styles.icon} />
-        </a>
+const Social = ({
+    youtubeURL,
+    tiktokURL,
+    instagramURL,
+    facebookURL,
+    xtwitterURL,
+    linkedinURL,
+}) => {
+    return (
+        <section className={styles.socials}>
+            {youtubeURL && (
+                <a className={styles.glow_btns} href={youtubeURL}>
+                    <FontAwesomeIcon icon={faYoutube} className={styles.icon} />
+                </a>
+            )}
+            {tiktokURL && (
+                <a className={styles.glow_btns} href={tiktokURL}>
+                    <FontAwesomeIcon icon={faTiktok} className={styles.icon} />
+                </a>
+            )}
 
-        <a className={styles.glow_btns} href="https://www.tiktok.com/@oftones_">
-            <FontAwesomeIcon icon={faTiktok} className={styles.icon} />
-        </a>
+            {instagramURL && (
+                <a className={styles.glow_btns} href={instagramURL}>
+                    <FontAwesomeIcon
+                        icon={faInstagram}
+                        className={styles.icon}
+                    />
+                </a>
+            )}
 
-        <a
-            className={styles.glow_btns}
-            href="https://www.instagram.com/oftones_/"
-        >
-            <FontAwesomeIcon icon={faInstagram} className={styles.icon} />
-        </a>
+            {facebookURL && (
+                <a className={styles.glow_btns} href={facebookURL}>
+                    <FontAwesomeIcon
+                        icon={faFacebookF}
+                        className={styles.icon}
+                    />
+                </a>
+            )}
+            {xtwitterURL && (
+                <a className={styles.glow_btns} href={xtwitterURL}>
+                    <FontAwesomeIcon
+                        icon={faXTwitter}
+                        className={styles.icon}
+                    />
+                </a>
+            )}
 
-        <a
-            className={styles.glow_btns}
-            href="https://www.facebook.com/people/Toni-Woodburn/100092261086687"
-        >
-            <FontAwesomeIcon icon={faFacebookF} className={styles.icon} />
-        </a>
-
-        <a className={styles.glow_btns} href="https://x.com/">
-            <FontAwesomeIcon icon={faXTwitter} className={styles.icon} />
-        </a>
-
-        <a
-            className={styles.glow_btns}
-            href="https://jm.linkedin.com/in/toniwoodburn-97b925191"
-        >
-            <FontAwesomeIcon icon={faLinkedin} className={styles.icon} />
-        </a>
-    </section>
-)
+            {linkedinURL && (
+                <a className={styles.glow_btns} href={linkedinURL}>
+                    <FontAwesomeIcon
+                        icon={faLinkedin}
+                        className={styles.icon}
+                    />
+                </a>
+            )}
+        </section>
+    )
+}
 
 export default Social

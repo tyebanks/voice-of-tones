@@ -135,19 +135,16 @@
     justify-content: center; /* Center horizontally */
     align-items: center;
 
+    @media (max-width: 768px) {
+        margin-bottom: var(--space-7);
+    }
+
     .blog_focus_top {
         width: 100%;
 
-        p {
+        .intro {
             margin-block: var(--space-5);
         }
-    }
-
-    .blog_focus_bottom {
-        outline: 1px dotted transparent;
-    }
-    @media (max-width: 768px) {
-        margin-bottom: var(--space-7);
     }
 
     .octagon_border {
@@ -186,65 +183,76 @@
             object-fit: cover; /* Fit the image within the container */
             transition: transform 0.5s ease;
         }
-    }
-    .blog_img_container:hover .blog_img {
-        transform: scale(
-            1.5
-        ); /* Adjust the scale value to increase or decrease zoom in...*/
-    }
 
-    .list {
-        display: flex;
-        justify-content: space-evenly;
-        padding-left: 40px;
-        list-style-type: none;
-        line-height: var(--line-height-dense);
-
-        .listItem {
-            padding-block: var(--space-5);
+        .blog_img_container:hover .blog_img {
+            transform: scale(
+                1.5
+            ); /* Adjust the scale value to increase or decrease zoom in...*/
         }
     }
 
-    .signature {
-        width: 5ch;
-        font-size: 3em;
-        font-family: var(--font-cursive);
-        margin-bottom: var(--space-7);
-        padding-block: var(--space-3);
-        background: linear-gradient(
-            to right,
-            rgb(53, 84, 57),
-            rgb(121, 176, 83)
-        );
-        -webkit-background-clip: text; // Clips the background of the letters to make outline
-        -webkit-text-fill-color: transparent; // makes the background of the letters transparent
-        animation: fadeIn 2s ease-in forwards;
-        pointer-events: none;
-        opacity: 0;
+    .blog_focus_bottom {
+        outline: 1px dotted transparent;
 
-        @keyframes fadeIn {
-            from {
-                opacity: 0;
-            }
-            to {
-                opacity: 1;
-            }
-        }
-    }
-
-    @media (max-width: 768px) {
         .list {
-            flex-direction: column;
-            margin-block: var(--space-4);
+            display: flex;
+            justify-content: space-evenly;
+            padding-left: 40px;
+            list-style-type: none;
+            line-height: var(--line-height-dense);
 
             .listItem {
-                padding-block: var(--space-2);
+                padding-block: var(--space-5);
             }
         }
 
+        width: 100%;
+        p {
+            font-family: 'Open Sans', sans-serif;
+            font-weight: 300;
+            font-size: var(--p-text-size);
+        }
         .signature {
-            margin-bottom: var(--space-2);
-            padding-block: var(--space-4);
+            width: 5ch;
+            font-size: 3em;
+            font-family: var(--font-cursive);
+            margin-bottom: var(--space-7);
+            padding-block: var(--space-3);
+            background: linear-gradient(
+                to right,
+                rgb(53, 84, 57),
+                rgb(121, 176, 83)
+            );
+            -webkit-background-clip: text; // Clips the background of the letters to make outline
+            -webkit-text-fill-color: transparent; // makes the background of the letters transparent
+            animation: fadeIn 2s ease-in forwards;
+            pointer-events: none;
+            opacity: 0;
+
+            @keyframes fadeIn {
+                from {
+                    opacity: 0;
+                }
+                to {
+                    opacity: 1;
+                }
+            }
+        }
+
+        @media (max-width: 768px) {
+            .list {
+                flex-direction: column;
+                margin-block: var(--space-4);
+
+                .listItem {
+                    padding-block: var(--space-2);
+                }
+            }
+
+            .signature {
+                margin-bottom: var(--space-2);
+                padding-block: var(--space-4);
+            }
         }
     }
 }

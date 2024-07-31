@@ -1,0 +1,62 @@
+/* Category.module.scss */
+@import '../../styles/variables.scss';
+
+.blog_categories_wrapper {
+    outline: 3px double rgb(123, 114, 250);
+    display: flex;
+    flex-flow: row wrap;
+    padding: 3em;
+    gap: 2em;
+
+    .category {
+        outline: 3px solid black;
+        height: 400px;
+        width: 400px;
+
+        background-size: cover;
+        background-position: center;
+        // transform: scale(1.1);
+        // transition: all 400ms ease;
+    }
+}
+.inner_box {
+    height: 70%;
+    width: 70%;
+    position: relative;
+    left: 15%;
+    top: 15%;
+}
+
+.inner_box span {
+    position: absolute;
+    background: white;
+    transition: all 00ms ease;
+}
+
+.top {
+    height: 2px;
+    width: 0%;
+    top: 0;
+    left: 0;
+}
+
+.right {
+    top: 0;
+    height: 0%;
+    width: 2px;
+    right: 0;
+}
+
+.bottom {
+    height: 2px;
+    width: 0%;
+    bottom: 0;
+    right: 0;
+}
+
+.left {
+    bottom: 0;
+    width: 2px;
+    height: 0%;
+}
+// }

@@ -59,7 +59,7 @@ const links = [
 
 const IndexPage = () => (
     <Layout showHero={true}>
-        <div className="textCenter">
+        <div className="textCenter ">
             <p className="intro">
                 <h2 className="home__h2">
                     {/* Featured Articles */}
