@@ -39,12 +39,9 @@
     flex-flow: row nowrap;
     justify-content: space-between;
     margin-block: 1em;
+    color: #4CAF50;
 }
 
-.card_tag,
-.card_readtime {
-    color: var(--color-layout-primary);
-}
 
 .card_tag {
     text-transform: uppercase;
@@ -55,11 +52,17 @@
     display: flex;
     justify-content: center;
     align-items: center;
-    // outline: 2px solid black;
-    height: 100px;
+    padding-block: 2.2em;
+    height: 50px;
     h2 {
         font-size: var(--font-mdx);
         line-height: 1.2;
+
+        overflow: hidden;
+        text-overflow: ellipsis;
+        display: -webkit-box;
+        -webkit-line-clamp: 2; /* Number of lines to show */
+        -webkit-box-orient: vertical;
     }
 }
 
