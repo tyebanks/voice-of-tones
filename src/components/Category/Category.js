@@ -1,13 +1,12 @@
-import * as React from 'react';
+import * as React from 'react'
 // import { Link } from 'gatsby'
-import * as styles from './Category.module.scss';
-import belleBasics from '../../images/belle_basics.jpg';
-import freelancing from '../../images/freelancing.jpg';
-import haircare from '../../images/haircare.jpg';
-import skincare from '../../images/skincare.jpg';
-import tonesAndPoetry from '../../images/tones_and_poetry.jpg';
-import twoTreadTravel from '../../images/two_tread_travel.jpg';
-
+import * as styles from './Category.module.scss'
+import belleBasics from '../../images/belle_basics.jpg'
+import freelancing from '../../images/freelancing.jpg'
+import haircare from '../../images/haircare.jpg'
+import skincare from '../../images/skincare.jpg'
+import tonesAndPoetry from '../../images/tones_and_poetry.jpg'
+import twoTreadTravel from '../../images/two_tread_travel.jpg'
 
 const imageMapping = {
     'belle_basics.jpg': belleBasics,
@@ -16,9 +15,7 @@ const imageMapping = {
     'skincare.jpg': skincare,
     'tones_and_poetry.jpg': tonesAndPoetry,
     'two_tread_travel.jpg': twoTreadTravel,
-};
-
-
+}
 
 const categories = [
     {
@@ -74,7 +71,9 @@ const CategoryCards = () => (
                     <span className={styles.right}></span>
                     <span className={styles.bottom}></span>
                     <span className={styles.left}></span>
-                    <p>{category.text}</p>
+                    <div className={styles.category_title}>
+                        <p>{category.text}</p>
+                    </div>
                 </div>
             </div>
         ))}

@@ -46,11 +46,13 @@
     height: 100px;
     align-items: center;
     justify-content: center;
+   
 
     p {
+        font-family: 'Prata', serif;
         font-weight: 500;
         font-size: 1.3em;
-        font-style: oblique;
+        // font-style: oblique;
         margin-block: 1em;
         padding-block: var(--space-4);
         width: 91ch;
