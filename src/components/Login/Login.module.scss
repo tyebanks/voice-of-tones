@@ -1,10 +1,20 @@
 /* Login.module.scss */
 @import '../../styles/variables.scss';
 
+html,
+body {
+    height: 100%;
+    margin: 0;
+}
+
 .wrapper {
-    border: 2px solid green;
+    box-sizing: border-box;
     background: #676279;
     padding: 4em;
+    color: white;
+    height: 100%;
+    display: flex;
+    align-items: center;
 }
 
 .login_panel {
@@ -22,8 +32,13 @@
     margin-right: 2em;
     width: 100%;
     height: 100%;
-    outline: solid red 2px;
 }
+.login_image {
+    height: 100%;
+    width: 100%;
+    border-radius: var(--border-radius);
+}
+
 .right_content {
     display: flex;
     flex-direction: column;
@@ -34,4 +49,15 @@
     height: 100%;
     gap: 2em;
     flex-grow: 1;
+
+    a{
+        color: rgb(36, 207, 36);
+    }
+}
+.textbox {
+    height: 30px;
+    border-radius: 5px;
+    border: 1px solid #8278ae;
+    background-color: #3b364c;
+    color: #716e7f;
 }

@@ -1,7 +1,7 @@
 import * as React from 'react'
 // import { Link } from 'gatsby'
 import Layout from '../components/Layout'
-// import Layout from "../components/layout"
+import Button from '../components/Button'
 import Seo from '../components/seo'
 import * as styles from '../components/Login/Login.module.scss'
 
@@ -12,10 +12,7 @@ const LogIn = ({ serverData }) => {
                 <div className={styles.login_panel}>
                     <div className={styles.left_image}>
                         <img
-                            style={{
-                                width: '320px',
-                                borderRadius: 'var(--border-radius)',
-                            }}
+                            className={styles.login_image}
                             alt="A random unsplash"
                             src={serverData.image}
                         />
@@ -23,10 +20,18 @@ const LogIn = ({ serverData }) => {
                     <div className={styles.right_content}>
                         <h1> Welcome back!</h1>
                         <h2> Log in</h2>
-                        <input type="text" />
-                        <input type="text" />
+                        <input
+                            type="text"
+                            className={styles.textbox}
+                            placeholder="  Email"
+                        />
+                        <input
+                            type="text"
+                            className={styles.textbox}
+                            placeholder="  Password"
+                        />
                         <a href="https://x.com">Forgot password?</a>
-                        <button>Log Me In!</button>
+                        <Button text="Log Me In" />
                     </div>
                 </div>
             </section>
