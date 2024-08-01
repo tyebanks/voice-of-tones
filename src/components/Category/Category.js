@@ -60,13 +60,13 @@ const CategoryCards = () => (
     <section className={styles.blog_categories_wrapper}>
         {categories.map((category) => (
             <article key={category.id} className={styles.category_box}>
-                <div
-                    className={styles.blog_category}
-                    style={{
-                        backgroundImage: `url(${imageMapping[category.image]})`,
-                    }}
-                >
-                    {' '}
+                <a href={category.url}>
+                    <div
+                        className={styles.blog_category}
+                        style={{
+                            backgroundImage: `url(${imageMapping[category.image]})`,
+                        }}
+                    ></div>{' '}
                     <div className={styles.inner_box}>
                         <div className={styles.category_title}>
                             <p>{category.text}</p>
@@ -76,7 +76,7 @@ const CategoryCards = () => (
                         <span className={styles.bottom}></span>
                         <span className={styles.left}></span>
                     </div>
-                </div>
+                </a>
             </article>
         ))}
     </section>
