@@ -59,23 +59,25 @@ const categories = [
 const CategoryCards = () => (
     <section className={styles.blog_categories_wrapper}>
         {categories.map((category) => (
-            <div
-                key={category.id}
-                className={styles.category}
-                style={{
-                    backgroundImage: `url(${imageMapping[category.image]})`,
-                }}
-            >
-                <div className={styles.inner_box}>
-                    <span className={styles.top}></span>
-                    <span className={styles.right}></span>
-                    <span className={styles.bottom}></span>
-                    <span className={styles.left}></span>
-                    <div className={styles.category_title}>
-                        <p>{category.text}</p>
+            <article key={category.id} className={styles.category_box}>
+                <div
+                    className={styles.blog_category}
+                    style={{
+                        backgroundImage: `url(${imageMapping[category.image]})`,
+                    }}
+                >
+                    {' '}
+                    <div className={styles.inner_box}>
+                        <div className={styles.category_title}>
+                            <p>{category.text}</p>
+                        </div>
+                        <span className={styles.top}></span>
+                        <span className={styles.right}></span>
+                        <span className={styles.bottom}></span>
+                        <span className={styles.left}></span>
                     </div>
                 </div>
-            </div>
+            </article>
         ))}
     </section>
 )
