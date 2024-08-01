@@ -1,7 +1,7 @@
 {
     "welcomeMessage": "Welcome to my blog! Here you'll find my voice as I share my thoughts and experiences on a plethoria of topics!",
     "authorBio": {
-        "imageSrc": "/src/images/author-four.jpg",
+        "imageSrc": "author-four.jpg",
         "description": [
             "Hello guys, I’m Toni! I am a freelance writer and rookie blogger whose passions include creative writing, travel, art in all its forms, and history.",
             "I’m 23 years old, I graduated from the University of the West Indies and earned a Bachelor of Science degree in Tourism Management Studies. I also work *now from home*, full time on an insurance account.",
@@ -9,7 +9,7 @@
         ]
     },
     "blogFocus": {
-        "imageSrc": "/src/images/author-three.jpg",
+        "imageSrc": "author-three.jpg",
         "intro": "So I have officially entered the “blogsphere”…",
         "description": [
             "Starting a blog has been in the back of my mind for years, but of course, crippling anxiety (gotta love it) always held me back. I always thought a blog required a certain level of openness and that’s just never been who I thought I was. The anxiety is still here BUT I decided to do it anyway. Voice of Tones blog will explore many of my personal interests, sharing my thoughts and experiences along the way.",

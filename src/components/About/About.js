@@ -3,8 +3,6 @@ import * as React from 'react'
 import * as styles from './About.module.scss'
 import aboutData from '../../data/aboutData.json'
 
-
-
 const WelcomeMsg = ({ message }) => (
     <section className={styles.welcome_msg}>
         <p>
@@ -21,7 +19,7 @@ const AuthorBio = ({ bio }) => (
         <div className={styles.bio_image_container}>
             <img
                 className={styles.bio_image}
-                src={bio.imageSrc}
+                src={require(`../../images/${bio.imageSrc}`).default}
                 alt="Author headshot"
             />
         </div>
@@ -45,7 +43,7 @@ const BlogFocus = ({ focus }) => (
             <div className={styles.blog_img_container}>
                 <img
                     className={styles.blog_img}
-                    src={focus.imageSrc}
+                    src={require(`../../images/${focus.imageSrc}`).default}
                     alt="Author excitedly cheering"
                 />
             </div>
