@@ -1,0 +1,82 @@
+/* Card.module.scss */
+@import '../../styles/variables.scss';
+
+.card_wrapper {
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: center;
+    align-items: center;
+    gap: 3em;
+    overflow: hidden;
+    padding-block: 1em;
+    margin-bottom: 4em;
+}
+
+.card {
+    width: 400px;
+    height: 580px;
+    border: 1px solid rgb(153, 153, 153);
+    border-radius: 15px;
+    overflow: hidden;
+    box-shadow: rgba(0, 0, 0, 0.2) 5px 5px 30px;
+}
+
+.card_tag,
+.card_readtime,
+.card_title,
+.card_excerpt,
+.button {
+    padding-inline: 1em;
+}
+
+.card_image {
+    width: 100%;
+    height: 250px;
+    object-fit: center;
+}
+.post_info {
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content: space-between;
+    margin-block: 1em;
+}
+
+.card_tag,
+.card_readtime {
+    color: var(--color-layout-primary);
+}
+
+.card_tag {
+    text-transform: uppercase;
+    font-weight: bold;
+}
+
+.card_title {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    // outline: 2px solid black;
+    height: 100px;
+    h2 {
+        font-size: var(--font-mdx);
+        line-height: 1.2;
+    }
+}
+
+.card_excerpt {
+    padding-block: 1em;
+    line-height: var(--line-height-normal);
+    text-align: justify;
+    text-justify: inter-word;
+    display: -webkit-box;
+    -webkit-line-clamp: 2;
+    -webkit-box-orient: vertical;
+    overflow: hidden;
+    // outline: 2px solid red;
+}
+
+.button {
+    padding-block: 1em;
+    margin-bottom: 2em;
+    // outline: black solid 2px;
+}

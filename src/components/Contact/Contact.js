@@ -20,7 +20,7 @@ const Contact = () => (
                 </div>
             </div>
 
-            <h2>Let's get in touch!</h2>
+            <h2 className={styles.subtitle}>Let's get in touch!</h2>
 
             <div className={styles.contact_buttons}>
                 <a

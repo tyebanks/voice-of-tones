@@ -1,7 +1,6 @@
 // src/components/About/About.js
 import * as React from 'react'
 import * as styles from './About.module.scss'
-// import '../../styles/global.scss' // Import global styles
 import aboutData from '../../data/aboutData.json'
 
 

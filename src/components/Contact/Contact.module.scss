@@ -49,6 +49,10 @@
         object-fit: cover;
     }
 }
+
+.subtitle{
+    font-family: var(--font-serif);
+}
 .contact_buttons {
     display: flex;
     flex-direction: column;
@@ -97,7 +101,7 @@
     //     text-align: center;
     //     border-radius: 50px;
     //     backdrop-filter: blur(15px);
-    //     box-shadow: rgba(0, 0, 0, 0.2) 5px 5px 30px;
+    //    
     //     border-width: 2px;
     //     border-style: solid;
     //     border-color: transparent;
