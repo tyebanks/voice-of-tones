@@ -3,7 +3,6 @@
  *
  * See: https://www.gatsbyjs.com/docs/reference/config-files/gatsby-config/
  */
-
 /**
  * @type {import('gatsby').GatsbyConfig}
  */
@@ -15,17 +14,29 @@ module.exports = {
         siteUrl: `https://voiceoftones.com/`,
     },
     plugins: [
-        `gatsby-plugin-sass`,
-        `gatsby-plugin-image`,
+        {
+            resolve: `gatsby-source-wordpress`,
+            options: {
+                url: `https://voiceoftones.com/graphql`, // Your WordPress GraphQL endpoint
+                schema: {
+                    timeout: 30000,
+                },
+                develop: {
+                    hardCacheMediaFiles: true,
+                },
+            },
+        },
+        `gatsby-plugin-sass`, // For Sass support
+        `gatsby-plugin-image`, // For optimized images
         {
             resolve: `gatsby-source-filesystem`,
             options: {
                 name: `images`,
-                path: `${__dirname}/src/images`,
+                path: `${__dirname}/src/images`, // Path for static images
             },
         },
-        `gatsby-transformer-sharp`,
-        `gatsby-plugin-sharp`,
+        `gatsby-transformer-sharp`, // For image processing
+        `gatsby-plugin-sharp`, // For optimized images
         {
             resolve: `gatsby-plugin-manifest`,
             options: {
@@ -33,11 +44,8 @@ module.exports = {
                 short_name: `starter`,
                 start_url: `/`,
                 background_color: `#663399`,
-                // This will impact how browsers show your PWA/website
-                // https://css-tricks.com/meta-theme-color-and-trickery/
-                // theme_color: `#663399`,
                 display: `minimal-ui`,
-                icon: `src/images/logo.png`, // This path is relative to the root of the site.
+                icon: `src/images/logo.png`, // Path to your site icon
             },
         },
     ],

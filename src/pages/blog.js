@@ -7,7 +7,8 @@ import Seo from '../components/seo'
 const BlogPage = () => (
     <Layout>
         <section className="blog__wrapper">
-            <h1>Blog Categories</h1>
+            <h1>Blog Posts</h1>
+            <h2 className='home__h2'>Search by Category: </h2>
             <Category />
             {/* <Link to="/">Go back to the homepage</Link> */}
         </section>

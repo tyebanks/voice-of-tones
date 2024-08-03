@@ -21,18 +21,30 @@ const Social = ({
     return (
         <section className={styles.socials}>
             {youtubeURL && (
-                <a className={styles.glow_btns} href={youtubeURL}>
+                <a
+                    className={styles.glow_btns}
+                    href={youtubeURL}
+                    aria-label="Youtube"
+                >
                     <FontAwesomeIcon icon={faYoutube} className={styles.icon} />
                 </a>
             )}
             {tiktokURL && (
-                <a className={styles.glow_btns} href={tiktokURL}>
+                <a
+                    className={styles.glow_btns}
+                    href={tiktokURL}
+                    aria-label="TikTok"
+                >
                     <FontAwesomeIcon icon={faTiktok} className={styles.icon} />
                 </a>
             )}
 
             {instagramURL && (
-                <a className={styles.glow_btns} href={instagramURL}>
+                <a
+                    className={styles.glow_btns}
+                    href={instagramURL}
+                    aria-label="Instagram"
+                >
                     <FontAwesomeIcon
                         icon={faInstagram}
                         className={styles.icon}
@@ -41,7 +53,11 @@ const Social = ({
             )}
 
             {facebookURL && (
-                <a className={styles.glow_btns} href={facebookURL}>
+                <a
+                    className={styles.glow_btns}
+                    href={facebookURL}
+                    aria-label="Facebook"
+                >
                     <FontAwesomeIcon
                         icon={faFacebookF}
                         className={styles.icon}
@@ -49,7 +65,11 @@ const Social = ({
                 </a>
             )}
             {xtwitterURL && (
-                <a className={styles.glow_btns} href={xtwitterURL}>
+                <a
+                    className={styles.glow_btns}
+                    href={xtwitterURL}
+                    aria-label="X/Twitter"
+                >
                     <FontAwesomeIcon
                         icon={faXTwitter}
                         className={styles.icon}
@@ -58,7 +78,11 @@ const Social = ({
             )}
 
             {linkedinURL && (
-                <a className={styles.glow_btns} href={linkedinURL}>
+                <a
+                    className={styles.glow_btns}
+                    href={linkedinURL}
+                    aria-label="LinkedIn"
+                >
                     <FontAwesomeIcon
                         icon={faLinkedin}
                         className={styles.icon}

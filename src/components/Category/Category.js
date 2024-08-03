@@ -58,6 +58,7 @@ const categories = [
 
 const CategoryCards = () => (
     <section className={styles.blog_categories_wrapper}>
+      
         {categories.map((category) => (
             <article key={category.id} className={styles.category_box}>
                 <a href={category.url}>
