@@ -19,6 +19,7 @@ const Card = ({
     categories,
     excerpt,
     content,
+    featuredImage,
 }) => {
     // Function to truncate text safely
     const truncateText = (text, length) => {
@@ -34,6 +35,14 @@ const Card = ({
 
     return (
         <article className={styles.card}>
+            {featuredImage && (
+                <section className={styles.card_image}>
+                    <img
+                        src={featuredImage.node.sourceUrl}
+                        alt={featuredImage.node.altText}
+                    />
+                </section>
+            )}
             <section className={styles.card_title}>
                 <h2>{title}</h2>
             </section>

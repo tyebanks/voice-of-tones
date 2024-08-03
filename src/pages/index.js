@@ -123,17 +123,20 @@ const IndexPage = ({ data }) => {
             </section> */}
 
             <section className="index__wrapper">
-                {posts.map((post) => (
-                    <Card
-                        key={post.id}
-                        title={post.title}
-                        readTime={post.postMetadata.read_time}
-                        categories={post.categories.nodes}
-                        slug={post.slug}
-                        date={post.date}
-                        excerpt={post.excerpt}
-                    />
-                ))}
+                <div className="card_wrapper">
+                    {posts.map((post) => (
+                        <Card
+                            key={post.id}
+                            title={post.title}
+                            readTime={post.postMetadata.read_time}
+                            categories={post.categories.nodes}
+                            slug={post.slug}
+                            date={post.date}
+                            excerpt={post.excerpt}
+                            featuredImage={post.featuredImage} // Pass the featured image data
+                        />
+                    ))}
+                </div>
             </section>
         </Layout>
     )
@@ -157,6 +160,12 @@ export const latestPostQuery = graphql`
                 }
                 postMetadata {
                     read_time
+                }
+                featuredImage {
+                    node {
+                        sourceUrl
+                        altText
+                    }
                 }
             }
         }

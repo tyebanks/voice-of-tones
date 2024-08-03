@@ -43,6 +43,20 @@ h2 {
 main {
     flex-grow: 1;
 }
+
+.index__wrapper {
+    .card_wrapper {
+        display: flex;
+        flex-flow: row wrap;
+        // justify-content: space-evenly;
+        align-items: center;
+        gap: 3em;
+        overflow: hidden;
+        padding-inline: 2em;
+        padding-block: 1em;
+        margin-bottom: 4em;
+    }
+}
 .about__wrapper,
 .blog__wrapper,
 .contact__wrapper {
@@ -65,9 +79,10 @@ main {
 .home__h2 {
     font-family: var(--font-serif);
     font-weight: 500;
-    margin-inline: 3.5em;
     margin-top: 1.5em;
     margin-bottom: 0.6em;
+    display: flex;
+    justify-content: center;
 }
 
 .flex-center {
