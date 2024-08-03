@@ -3,9 +3,13 @@
  *
  * See: https://www.gatsbyjs.com/docs/reference/config-files/gatsby-config/
  */
-/**
- * @type {import('gatsby').GatsbyConfig}
- */
+/** @type {import('gatsby').GatsbyConfig} */
+
+
+require("dotenv").config({
+    path: `.env.${process.env.NODE_ENV}`,
+  });
+
 module.exports = {
     siteMetadata: {
         title: `Voice of Tones`,
@@ -17,7 +21,7 @@ module.exports = {
         {
             resolve: `gatsby-source-wordpress`,
             options: {
-                url: `https://voiceoftones.com/graphql`, // Your WordPress GraphQL endpoint
+                url: process.env.GATSBY_API_URL, // Your WordPress GraphQL endpoint 
                 schema: {
                     timeout: 30000,
                 },
