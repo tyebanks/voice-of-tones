@@ -146,7 +146,7 @@ export default IndexPage
 
 export const latestPostQuery = graphql`
     query {
-        allWpPost(sort: { fields: date, order: DESC }, limit: 6) {
+        allWpPost(sort: { date: DESC }, limit: 6) {
             nodes {
                 id
                 title
