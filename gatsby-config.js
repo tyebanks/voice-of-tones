@@ -5,10 +5,9 @@
  */
 /** @type {import('gatsby').GatsbyConfig} */
 
-
-require("dotenv").config({
+require('dotenv').config({
     path: `.env.${process.env.NODE_ENV}`,
-  });
+})
 
 module.exports = {
     siteMetadata: {
@@ -21,10 +20,13 @@ module.exports = {
         {
             resolve: `gatsby-source-wordpress`,
             options: {
-                url: process.env.GATSBY_API_URL, // Your WordPress GraphQL endpoint 
+                url: process.env.GATSBY_API_URL, // WordPress GraphQL endpoint
                 schema: {
                     timeout: 30000,
+                    requestConcurrency: 5, // Adjust based on your needs
+                    previewRequestConcurrency: 2, // Adjust based on your needs
                 },
+
                 develop: {
                     hardCacheMediaFiles: true,
                 },
