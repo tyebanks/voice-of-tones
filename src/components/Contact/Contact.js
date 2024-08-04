@@ -11,7 +11,7 @@ import {
 } from '@fortawesome/free-brands-svg-icons'
 import authorImage from '../../images/logo.png'
 
-const Contact = () => (
+const Contact = ({ h2 }) => (
     <section className={styles.container}>
         <div className={styles.glass_card}>
             <div className={styles.image_border_container}>
@@ -20,7 +20,7 @@ const Contact = () => (
                 </div>
             </div>
 
-            <h2 className={styles.subtitle}>Let's get in touch!</h2>
+            <h2 className={styles.subtitle}>{h2}</h2>
 
             <div className={styles.contact_buttons}>
                 <a
